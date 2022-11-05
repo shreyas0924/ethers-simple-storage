@@ -36,6 +36,7 @@ async function main() {
   const transactionReceipt = await transactionResponse.wait(1)
   const updatedNumber = await contract.retrieve()
   console.log(`Updated number is ${updatedNumber}`)
+  console.log(`Contract address: ${contract.address}`)
 }
 
 main()
